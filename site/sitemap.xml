@@ -1,5 +1,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
 <loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/index.html</loc>
 <lastmod>2021-01-06T09:13:21+00:00</lastmod>
@@ -14,6 +13,22 @@
 <loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/cat.html</loc>
 <lastmod>2021-01-06T09:13:20+00:00</lastmod>
 <priority>0.80</priority>
+<image:image>
+    <image:loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/media/cat.jpeg</image:loc>
+    <image:caption>image d'un chat avec un chapeau</image:caption>
+</image:image>
+<image:image>
+    <image:loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/media/cat2.jpeg</image:loc>
+    <image:caption>image d'un chaton roux</image:caption>
+</image:image>
+<image:image>
+    <image:loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/media/cat3.jpeg</image:loc>
+    <image:caption>image d'un chaton mignon</image:caption>
+</image:image>
+<image:image>
+    <image:loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/media/cat4.jpeg</image:loc>
+    <image:caption>image d'un chat noir et blanc</image:caption>
+</image:image>
 </url>
 <url>
 <loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/ambiance_cat.html</loc>
@@ -24,6 +39,30 @@
 <loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/catV.html</loc>
 <lastmod>2021-01-06T09:13:21+00:00</lastmod>
 <priority>0.40</priority>
+<video:video>
+<video:title>Un chat qui joue du piano</video:title>
+<video:description>Un chat très mignon qui essaye tant bien que mal de jouer du piano</video:description>
+<video:content_loc>
+    http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/media/cat.mp4</video:content_loc>
+<video:duration>149</video:duration>
+<video:rating>4.2</video:rating>
+<video:publication_date>2021-09-01T10:24:30+08:00</video:publication_date>
+<video:family_friendly>yes</video:family_friendly>
+<video:requires_subscription>no</video:requires_subscription>
+<video:live>no</video:live>
+</video:video>
+<video:video>
+<video:title>Des chats dans la rue</video:title>
+<video:description>Un homme étrange nourrit des chats dans la rue</video:description>
+<video:content_loc>
+    http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/media/cat2.mp4</video:content_loc>
+<video:duration>433</video:duration>
+<video:rating>3.8</video:rating>
+<video:publication_date>2021-09-01T10:34:30+08:00</video:publication_date>
+<video:family_friendly>yes</video:family_friendly>
+<video:requires_subscription>no</video:requires_subscription>
+<video:live>no</video:live>
+</video:video>
 </url>
 <url>
 <loc>http://www-etu-info.iut2.upmf-grenoble.fr/~monierpi/SEO/contact.html</loc>
