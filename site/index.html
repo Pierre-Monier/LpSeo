@@ -11,9 +11,10 @@
     gtag('config', 'G-7LXE8Y5TYV');
   </script>
   <meta name="google-site-verification" content="-vq5INuF_93GEjwiGHyJb01bhK5l2DzOGX1zInS05OA" />
-  <title>Acceuil</title>
+  <title>Accueil - parc animalier de Grenoble</title>
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,7 +24,7 @@
     <ul class="menu-list">
       <li><a href="index.html" class="active">Accueil</a></li>
       <li class="dropdown">
-        <a href="perso.html">Espace abonn&#233</a>
+        <a href="perso.html">Espace abonné</a>
         <div class="dropdown-content">
           <a href="#">Connexion</a>
           <a href="#">Mes informations</a>
@@ -38,18 +39,94 @@
     </ul>
   </nav>
 
-  <h1 class="page-title">Page d'Accueil</h1>
-
-  <section class="description">
-    <h2>Description g&#233n&#233rale</h2>
-    <blockquote>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</blockquote>
-    <p><i>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</i></p>
-  </section>
-
   <section class="infos">
-    <h3>Infos pratiques</h3>
-    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+    <h1>Bienvenue au parc animalier de Grenoble</h1>
+    <div class="img-article-container">
+      <img src="media/panda.jpg" alt="Panda entrain de manger du bambou">
+      <article>
+        <h2>Venez découvrir nos animaux au coeur de Grenoble</h2>
+        <p>Venez découvrir notre parc à quelques minutes de la ville. Au programme : la plus grande variété d’espèces de <em>félins</em> de la région. Mais ce n’est pas tout car vous pourrez rencontrer nos <em>singes</em>, nos <em>lions</em> et bien plus encore !</p>
+        <a href="cat.html" class="button mt-1">Consulter le catalogue des animaux</a> 
+      </article>
+    </div>
+    <div class="img-article-container left mt-2">
+      <img src="media/cat.jpg" alt="Chat">
+      <article>
+        <h2>L'occasion de se ressourcer</h2>
+        <p>Pour le plus grand confort des animaux et des visiteurs, notre aménagement d’exception vous donnera l’impression d’avoir quitté la ville pour une immersion totale au coeur de la nature. Ici, pas de route goudronnée ou de pollution : tout est fait pour vous <em>dépayser</em>. Les enfants adorent!</p>
+      </article>
+    </div>
+    <div class="img-article-container mt-2">
+      <img src="media/renard.jpg" alt="Renard">
+      <article>
+        <h2>En quête d’une <em>sortie insolite</em> à proximité de Grenoble ?</h2>
+        <p>Vous vous demandiez <em>que faire à  Grenoble un dimanche</em> ? Le parc est l’endroit rêvé pour venir passer une journée <em>en famille</em>. Nous offrons des tarifs particuliers aux enfants. Les écoliers et étudiants ne sont pas en reste et profitent de tarifs réduits pour les <em>sorties scolaires</em>.</p>
+        <a href="cat.html" class="button mt-1">Voir les infos pratiques</a> 
+      </article>
+    </div>
+    <div class="img-article-container left mt-2">
+      <img src="media/cat2.jpg" alt="Chat">
+      <article>
+        <h2>Un émerveillement de tous les instants</h2>
+        <p>Depuis sa création il y a 20 ans, le parc n’a cessé de grandir : il accueille aujourd’hui plus de 180 espèces d’animaux ! Venez découvrir comment le caméléon change de couleur, ou comment les écureuils font des réserves de nourriture, au cours de la <em>visite pédagogique du parc</em>. Assistez à l’impressionnant spectacles des otaries, et venez observer les nouveaux animaux du parc !</p>
+      </article>
+    </div>
+
   </section>
 
+  <section>
+    <h2>Avis & témoignages</h2>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="testimony">
+              <h3>Pour les grands et les petits</h3>
+              <p>Le parc est super, il y a beaucoup d’animaux et ils sont très bien traités. Les activités sont super, les enfants ont adoré le spectacle des otaries et l’animation avec les soigneurs des animaux.
+                Idéal pour les sorties en famille, et en plus pas très loin de Grenoble :
+                à refaire dès que possible !</p>
+              <span>
+                Marie
+              </span>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="testimony">
+              <h3>Super parc pour une sortie romantique</h3>
+              <p>La déco est géniale et on a vu plein d’animaux insolites. Il y a des zones aménagées pour se reposer et manger, le zoo est très joli et avec tout le nécessaire.
+                Je recommande à 200%</p>
+              <span>
+                Bob
+              </span>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="testimony">
+              <h3>Meilleur parc animalier de Grenoble</h3>
+              <span>
+                Richard Stallman
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="d-flex align-items-center">
+    <a href="plan.html">Plan du site</a>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.splide', {
+        type   : 'loop',
+        padding: {
+          right: '5rem',
+          left : '5rem',
+        },
+      } ).mount();
+    } );
+  </script>
 </body>
 </html>

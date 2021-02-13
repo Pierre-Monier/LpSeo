@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap");
 body {
-  background-color: #0bc1aa;
-  font-family: Arial;
+  background-color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
   padding: 32px;
+  margin: 0;
+  margin-top: 104px;
 }
 
 h1, h2, h3 {
   color: #f68344;
+  font-family: "Bree Serif", serif;
   font-weight: bold;
 }
 
@@ -25,6 +29,7 @@ p {
   width: 100%;
   padding-left: 0;
   position: fixed;
+  z-index: 25;
   top: 0;
   left: 0;
   background-color: white;
@@ -85,7 +90,7 @@ p {
   border: solid 1px #846526;
 }
 .Chats table tr:nth-child(even) {
-  background-color: #0bc1aa;
+  background-color: whitesmoke;
 }
 
 .entete {
@@ -125,7 +130,7 @@ tfoot tr td {
   display: block;
 }
 .dropdown .dropdown-content a:hover {
-  background-color: #0bc1aa;
+  background-color: whitesmoke;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -181,6 +186,128 @@ form input[type=submit] {
 }
 form input[type=submit]:hover {
   background-color: #846526;
+}
+
+.plan li {
+  margin: 20px 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: -32px;
+  padding: 32px;
+  margin-top: 64px;
+  border-top: solid #f68344 1px;
+}
+footer a {
+  color: #f68344;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.img-article-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 80vh;
+  overflow: hidden;
+  padding: 32px;
+}
+.img-article-container.left {
+  justify-content: flex-start;
+}
+.img-article-container img {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.img-article-container article {
+  padding: 32px;
+  width: 100%;
+  background-color: white;
+  line-height: 1.5em;
+  bottom: 32px;
+  right: 32px;
+}
+.img-article-container article h1, .img-article-container article h2, .img-article-container article h3 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1.2em;
+}
+.img-article-container article em {
+  font-weight: bolder;
+  font-style: normal;
+  color: #f68344;
+}
+.img-article-container article .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  background-color: #f68344;
+  border: solid 1px #f68344;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.img-article-container article .button:hover {
+  background-color: white;
+  color: #f68344;
+}
+
+.testimony {
+  background-color: white;
+  padding: 32px;
+  margin: 32px;
+  border: solid 1px #f68344;
+  line-height: 1.5em;
+}
+.testimony h1, .testimony h2, .testimony h3 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1.2em;
+}
+.testimony em {
+  font-weight: bolder;
+  font-style: normal;
+  color: #f68344;
+}
+.testimony > :not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 568px) {
+  .testimony {
+    margin: 32px 20vw;
+  }
+
+  .img-article-container article {
+    width: 30%;
+  }
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
