@@ -1,4 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
   background-color: whitesmoke;
   font-family: "Ubuntu", sans-serif;
@@ -20,7 +22,7 @@ p {
 .page-title {
   text-align: center;
   font-size: 48px;
-  margin-top: 125px;
+  margin-top: 50px;
   color: #846526;
   margin-bottom: 64px;
 }
@@ -138,6 +140,7 @@ tfoot tr td {
 
 video {
   margin: 0 auto;
+  width: 100%;
   border: 10px outset #ddd;
 }
 
@@ -150,7 +153,7 @@ form input, form textarea {
   display: block;
   appearance: none;
   outline: 0;
-  background-color: fade(white, 20%);
+  background-color: whitesmoke;
   width: 250px;
   border: 0px;
   border-radius: 3px;
@@ -159,7 +162,7 @@ form input, form textarea {
   display: block;
   text-align: center;
   font-size: 18px;
-  color: white;
+  color: grey;
   transition-duration: 0.25s;
   font-weight: 300;
 }
@@ -172,20 +175,10 @@ form input:focus, form textarea:focus {
   color: #f68344;
 }
 form input[type=submit] {
-  appearance: none;
-  outline: 0;
-  background-color: white;
-  border: 0;
-  padding: 10px 15px;
-  color: #f68344;
-  border-radius: 3px;
-  width: 250px;
-  cursor: pointer;
-  font-size: 18px;
-  transition-duration: 0.25s;
-}
-form input[type=submit]:hover {
-  background-color: #846526;
+  text-align: center;
+  display: block !important;
+  padding: 10px 15px !important;
+  margin: auto;
 }
 
 .plan li {
@@ -231,7 +224,8 @@ footer a {
   height: 100%;
   object-fit: cover;
 }
-.img-article-container article {
+
+article, .text {
   padding: 32px;
   width: 100%;
   background-color: white;
@@ -239,17 +233,21 @@ footer a {
   bottom: 32px;
   right: 32px;
 }
-.img-article-container article h1, .img-article-container article h2, .img-article-container article h3 {
+article :last-child, .text :last-child {
+  margin-bottom: 0;
+}
+article h1, article h2, article h3, .text h1, .text h2, .text h3 {
   margin-top: 0;
   padding-top: 0;
   font-size: 1.2em;
 }
-.img-article-container article em {
-  font-weight: bolder;
+article em, .text em {
+  font-weight: 700;
   font-style: normal;
   color: #f68344;
 }
-.img-article-container article .button {
+
+.button, .social a, form input[type=submit] {
   display: inline-block;
   text-decoration: none;
   padding: 16px;
@@ -259,7 +257,7 @@ footer a {
   font-weight: bold;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-.img-article-container article .button:hover {
+.button:hover, .social a:hover, form input[type=submit]:hover {
   background-color: white;
   color: #f68344;
 }
@@ -285,6 +283,17 @@ footer a {
   margin-bottom: 16px;
 }
 
+section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.social a {
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+}
+
 @media (min-width: 568px) {
   .testimony {
     margin: 32px 20vw;
@@ -293,21 +302,6 @@ footer a {
   .img-article-container article {
     width: 30%;
   }
-}
-.mt-1 {
-  margin-top: 1rem;
-}
-
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

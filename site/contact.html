@@ -25,30 +25,65 @@
       <li class="dropdown">
         <a href="perso.html">Espace abonn&#233</a>
         <div class="dropdown-content">
-          <a href="#">Connexion</a>
-          <a href="#">Mes informations</a>
-          <a href="#">Messagerie</a>
-          <a href="#">Historique</a>
+          <a href="perso.html">Connexion</a>
+          <a href="perso.html">Mes informations</a>
+          <a href="perso.html">Messagerie</a>
+          <a href="perso.html">Historique</a>
         </div>
       </li>
       <li><a href="cat.html">Chats</a></li>
       <li><a href="ambiance_cat.html">Ambiance chats</a></li>
       <li><a href="catV.html">Chats videos</a></li>
-      <li><a   href="contact.html">Contact</a></li>
+      <li><a   href="contact.html">Infos pratiques</a></li>
     </ul>
   </nav>
 
-  <h1 class="page-title">Contact</h1>
+  <h1 class="page-title">Infos pratiques</h1>
 
-  <section class="ambiances">
-    <form class="" action="index.html" method="post">
-      <input alt="Nom et prenom" type="text" name="" value="" placeholder="Nom et pr&#233nom" required>
-      <input alt="Email" type="email" name="" value="" placeholder="Email">
-      <input alt="Numéro de téléphone" type="tel" name="" value="" pattern="[0-9]{10}" placeholder="Num&#233ro de t&#233l&#233phone">
-      <textarea alt="corps du message" name="name" rows="8" cols="80" placeholder="Message" required></textarea>
-      <input alt="Envoyer" type="submit" value="Envoyer">
-    </form>
-  </section>
+
+  <div class="row">
+    <section class="col-12 col-lg-4 contact">
+      <div class="text">
+        <h2>Contact</h2>
+        <form action="index.html" method="post">
+          <input alt="Nom et prenom" type="text" name="" value="" placeholder="Nom et pr&#233nom" required>
+          <input alt="Email" type="email" name="" value="" placeholder="Email">
+          <input alt="Numéro de téléphone" type="tel" name="" value="" pattern="[0-9]{10}" placeholder="Num&#233ro de t&#233l&#233phone">
+          <textarea alt="corps du message" name="name" rows="8" cols="80" placeholder="Message" required></textarea>
+          <input alt="Envoyer" type="submit" value="Envoyer">
+        </form>
+      </div>
+    </section>
+    <section class="col-12 col-lg-8 contact">
+      <div class="text">
+        <h2>Informations pratiques</h2>
+        <ul>
+          <li>Localisation: 38000 Grenoble 4 route des chats</li>
+          <li>Horaires : ouvert de 8h à 18h tous les jours</li>
+          <li>Coût d'entrée : 8€ (4€ pour les moins de 12 ans)</li>
+          <li>Contactez nous pour les tarifs de groupe</li>
+        </ul>
+      </div>
+      <div class="text mt-4">
+        <h2>Suivez nous sur les réseaux sociaux</h2>
+        <div class="row social">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href=""><i class="bi bi-facebook"></i></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href=""><i class="bi bi-twitter"></i></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <footer class="d-flex align-items-center">
     <a href="plan.html">Plan du site</a>
   </footer>
