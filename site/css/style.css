@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@500;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
   background-color: whitesmoke;
@@ -241,8 +241,8 @@ article h1, article h2, article h3, .text h1, .text h2, .text h3 {
   padding-top: 0;
   font-size: 1.2em;
 }
-article em, .text em {
-  font-weight: 700;
+article strong, .text strong {
+  font-weight: bold;
   font-style: normal;
   color: #f68344;
 }
@@ -274,8 +274,8 @@ article em, .text em {
   padding-top: 0;
   font-size: 1.2em;
 }
-.testimony em {
-  font-weight: bolder;
+.testimony strong {
+  font-weight: bold;
   font-style: normal;
   color: #f68344;
 }
