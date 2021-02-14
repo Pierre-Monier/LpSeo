@@ -11,9 +11,11 @@
     gtag('config', 'G-7LXE8Y5TYV');
   </script>
   <meta name="google-site-verification" content="-vq5INuF_93GEjwiGHyJb01bhK5l2DzOGX1zInS05OA" />
-  <title>Espace abonnée</title>
+  <title>Espace abonné - parc animalier de Grenoble</title>
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+  <meta name="description" content="Bienvenue sur la page de connexion à votre espace personnel.">
+  <meta name="keywords" content="parc animalier, zoo, animaux, activité grenoble, grenoble" lang="fr"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,34 +27,49 @@
       <li class="dropdown">
         <a href="perso.html" class="active">Espace abonn&#233</a>
         <div class="dropdown-content">
-          <a href="#">Connexion</a>
-          <a href="#">Mes informations</a>
-          <a href="#">Messagerie</a>
-          <a href="#">Historique</a>
+          <a href="perso.html">Connexion</a>
+          <a href="perso.html">Mes informations</a>
+          <a href="perso.html">Messagerie</a>
+          <a href="perso.html">Historique</a>
         </div>
       </li>
       <li><a href="cat.html">Chats</a></li>
       <li><a href="ambiance_cat.html">Ambiance chats</a></li>
       <li><a href="catV.html">Chats videos</a></li>
-      <li><a   href="contact.html">Contact</a></li>
+      <li><a   href="contact.html">Infos pratiques</a></li>
     </ul>
   </nav>
 
-  <h1 class="page-title">Espace abonnée</h1>
+  <h1 class="page-title">Espace abonné</h1>
 
-  <section class="perso">
-    <ul>
-      <li>Connexion</li>
-      <li>Mes informations</li>
-      <ol>
-        <li>Nom et pr&#233nom</li>
-        <li>Num&#233ro de t&#233l&#233phone</li>
-        <li>Email</li>
-      </ol>
-      <li>Messagerie</li>
-      <li>Historique</li>
-    </ul>
-  </section>
 
+  <div class="row">
+    <section class="col-12 col-lg-6 contact">
+      <div class="text">
+        <h2>Inscription</h2>
+        <form action="index.html" method="post">
+          <input alt="Nom et prenom" type="text" name="" value="" placeholder="Nom et pr&#233nom" required>
+          <input alt="Email" type="email" name="" value="" placeholder="Email">
+          <input type="password" placeholder="Mot de passe">
+          <input type="password" placeholder="Retapez votre mot de passe">
+          <input alt="Envoyer" type="submit" value="S'inscrire">
+        </form>
+      </div>
+    </section>
+    <section class="col-12 col-lg-6 contact">
+      <div class="text">
+        <h2>Connexion</h2>
+        <form action="index.html" method="post">
+          <input alt="Email" type="email" name="" value="" placeholder="Email">
+          <input type="password" placeholder="Mot de passe">
+          <input alt="Envoyer" type="submit" value="Se connecter">
+        </form>
+      </div>
+    </section>
+  </div>
+  
+  <footer class="d-flex align-items-center">
+    <a href="plan.html">Plan du site</a>
+  </footer>
 </body>
 </html>

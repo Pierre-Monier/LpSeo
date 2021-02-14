@@ -1,11 +1,17 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@500;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
-  background-color: #0bc1aa;
-  font-family: Arial;
+  background-color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
   padding: 32px;
+  margin: 0;
+  margin-top: 104px;
 }
 
 h1, h2, h3 {
   color: #f68344;
+  font-family: "Bree Serif", serif;
   font-weight: bold;
 }
 
@@ -16,7 +22,7 @@ p {
 .page-title {
   text-align: center;
   font-size: 48px;
-  margin-top: 125px;
+  margin-top: 50px;
   color: #846526;
   margin-bottom: 64px;
 }
@@ -25,6 +31,7 @@ p {
   width: 100%;
   padding-left: 0;
   position: fixed;
+  z-index: 25;
   top: 0;
   left: 0;
   background-color: white;
@@ -85,7 +92,7 @@ p {
   border: solid 1px #846526;
 }
 .Chats table tr:nth-child(even) {
-  background-color: #0bc1aa;
+  background-color: whitesmoke;
 }
 
 .entete {
@@ -125,7 +132,7 @@ tfoot tr td {
   display: block;
 }
 .dropdown .dropdown-content a:hover {
-  background-color: #0bc1aa;
+  background-color: whitesmoke;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -133,6 +140,7 @@ tfoot tr td {
 
 video {
   margin: 0 auto;
+  width: 100%;
   border: 10px outset #ddd;
 }
 
@@ -145,7 +153,7 @@ form input, form textarea {
   display: block;
   appearance: none;
   outline: 0;
-  background-color: fade(white, 20%);
+  background-color: whitesmoke;
   width: 250px;
   border: 0px;
   border-radius: 3px;
@@ -154,7 +162,7 @@ form input, form textarea {
   display: block;
   text-align: center;
   font-size: 18px;
-  color: white;
+  color: grey;
   transition-duration: 0.25s;
   font-weight: 300;
 }
@@ -167,20 +175,133 @@ form input:focus, form textarea:focus {
   color: #f68344;
 }
 form input[type=submit] {
-  appearance: none;
-  outline: 0;
-  background-color: white;
-  border: 0;
-  padding: 10px 15px;
-  color: #f68344;
-  border-radius: 3px;
-  width: 250px;
-  cursor: pointer;
-  font-size: 18px;
-  transition-duration: 0.25s;
+  text-align: center;
+  display: block !important;
+  padding: 10px 15px !important;
+  margin: auto;
 }
-form input[type=submit]:hover {
-  background-color: #846526;
+
+.plan li {
+  margin: 20px 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: -32px;
+  padding: 32px;
+  margin-top: 64px;
+  border-top: solid #f68344 1px;
+}
+footer a {
+  color: #f68344;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.img-article-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 80vh;
+  overflow: hidden;
+  padding: 32px;
+}
+.img-article-container.left {
+  justify-content: flex-start;
+}
+.img-article-container img {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+article, .text {
+  padding: 32px;
+  width: 100%;
+  background-color: white;
+  line-height: 1.5em;
+  bottom: 32px;
+  right: 32px;
+}
+article :last-child, .text :last-child {
+  margin-bottom: 0;
+}
+article h1, article h2, article h3, .text h1, .text h2, .text h3 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1.2em;
+}
+article strong, .text strong {
+  font-weight: bold;
+  font-style: normal;
+  color: #f68344;
+}
+
+.button, .social a, form input[type=submit] {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  background-color: #f68344;
+  border: solid 1px #f68344;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.button:hover, .social a:hover, form input[type=submit]:hover {
+  background-color: white;
+  color: #f68344;
+}
+
+.testimony {
+  background-color: white;
+  padding: 32px;
+  margin: 32px;
+  border: solid 1px #f68344;
+  line-height: 1.5em;
+}
+.testimony h1, .testimony h2, .testimony h3 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1.2em;
+}
+.testimony strong {
+  font-weight: bold;
+  font-style: normal;
+  color: #f68344;
+}
+.testimony > :not(:last-child) {
+  margin-bottom: 16px;
+}
+
+section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.social a {
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+}
+
+@media (min-width: 568px) {
+  .testimony {
+    margin: 32px 20vw;
+  }
+
+  .img-article-container article {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
